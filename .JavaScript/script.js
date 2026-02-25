@@ -67,5 +67,30 @@ const usuarios = ["andre", "marcos", "guilherme"]
 console.log(usuarios[1])
 
 
+const userName = ("andre")
+
+console.log(userName)
 
 
+
+const Array = [
+    {
+        UserName:"itissantiiagoo",
+        Password:"Lusca@0811",
+        matricula: 1205656
+    },
+    
+    {
+        UserName:"whoissalada",
+        PassWord:"Kazuma@0811",
+        matricula:null
+    }
+]
+
+console.log(Array)
+
+
+
+
+
+ 
