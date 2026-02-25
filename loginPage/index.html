@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginPage</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="conteiner">
@@ -16,11 +16,25 @@
         <div class="form">
            <input type="password" name="senha" id="isenha" placeholder="Passaword" required maxlength="12" minlength="8">
         </div>
-        <div>
-            <input type="submit" value="Entrar">
-        </div>
+        
+        <div class="entrar"><input type="submit" value="Entrar"></div>
+       
+        
+        
 
        </form>
     </main>
 </body>
+
+<script>
+    function mostrarSenha() {
+      const input = document.getElementById("isenha");
+
+      if (input.type === "password") {
+        input.type = "text";
+      } else {
+        input.type = "password";
+      }
+    }
+  </script>
 </html>
