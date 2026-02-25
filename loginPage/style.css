@@ -7,7 +7,8 @@
 }
 
 body {
-  background: url(./archives/bg-desktop.jpg);
+  background: url(./archives/bg-desktop.jpg) no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,27 +25,56 @@ body {
     max-width: 90vw;
     background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(100px);
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.178);
 }
 
 .form {
-    padding: 20px;
-    text-align: center;   
+    text-align: center;
+    margin: 10px;
+}
+
+.form input {
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.295);
+    background: none;
 }
 
 .entrar {
-    margin: 20px;
     text-align: center;
+}
+
+.entrar input {
+    margin: 20px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.295);
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.entrar input:hover {
+   border: 1px solid rgba(255, 255, 255, 0.281);
+   background-color: rgba(211, 211, 211, 0.192);
+   transform: translateY(-4px);
+   transition: .4s;
 }
 
 input{
     padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
 }
 
 input:focus {
     outline: none;
+    color: white;
 }
+
 
 input::placeholder {
     color: black;
-    padding: 5px;
+    text-align: left;
+    color: rgb(230, 230, 230);
 }
+
