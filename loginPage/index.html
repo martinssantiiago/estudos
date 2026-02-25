@@ -8,12 +8,17 @@
 </head>
 <body>
     <main class="conteiner">
+
+       <img src="./archives/ADS-removebg-preview.png" alt="">
+
        <form action="cadatro.php" autocomplete="off">
 
         <div class="form">
+           <ion-icon name="person-outline"></ion-icon>
            <input type="text" name="nome" id="inome" placeholder="UserName" required maxlength="30">
         </div>
         <div class="form">
+           <ion-icon name="lock-closed-outline"></ion-icon>
            <input type="password" name="senha" id="isenha" placeholder="Passaword" required maxlength="12" minlength="8">
         </div>
         
@@ -26,15 +31,6 @@
     </main>
 </body>
 
-<script>
-    function mostrarSenha() {
-      const input = document.getElementById("isenha");
-
-      if (input.type === "password") {
-        input.type = "text";
-      } else {
-        input.type = "password";
-      }
-    }
-  </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

@@ -21,11 +21,13 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.418);
     border-radius: 20px;
     margin: 0 auto;
-    width: 350px;
+    width: 450px;
+    max-width: 500px;
     max-width: 90vw;
     background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(100px);
     box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.178);
+    text-align: center;
 }
 
 .form {
@@ -39,6 +41,10 @@ body {
     margin: 10px;
     border: 1px solid rgba(255, 255, 255, 0.295);
     background: none;
+}
+
+.form input:hover {
+    border: 1px solid white;
 }
 
 .entrar {
@@ -76,5 +82,18 @@ input::placeholder {
     color: black;
     text-align: left;
     color: rgb(230, 230, 230);
+}
+
+
+ion-icon {
+    color: white;
+    margin: 0;
+}
+
+
+img {
+    width: 50px;
+    margin: 10px auto;
+    display: block;
 }
 
