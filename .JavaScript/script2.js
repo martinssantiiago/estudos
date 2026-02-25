@@ -1,12 +1,5 @@
 /*IF and ELSE */
 
-const Nota = 6
-if(Nota >= 6){
-  console.log("aluno aprovado")
-}else{
-    console.log("aluno reprovado")
-}
-
 /*
  operadores de comparaçao 
   > / maior que 
@@ -17,4 +10,20 @@ if(Nota >= 6){
   <= / menor ou igual
 */
 
- 
+const Nota = 1;
+
+if (Nota > 7) {
+  console.log("passou");
+} else {
+  console.log("nao passou");
+}
+
+
+
+const cidade = 30000
+
+if(cidade > 30000) {
+    console.log("CIDADE GRANDE")
+} else {
+    console.log("CIDADE PEQUENA")
+}
