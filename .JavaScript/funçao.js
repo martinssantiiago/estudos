@@ -1,12 +1,13 @@
-function DigaMeuNome() {
-    console.log("andre")
+function soma(numero1, numero2) {
+    const resultado = (numero1 + numero2)
+    console.log(resultado)
 }
 
-DigaMeuNome()
 
+soma(1,1)
 
-function DigaQualquerNome(name) {
-    console.log(name)
+function Nome(nome) {
+    console.log(nome)
 }
 
-DigaQualquerNome("andre")
+Nome("andre")
