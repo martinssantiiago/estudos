@@ -1,13 +1,21 @@
-function soma(numero1, numero2) {
-    const resultado = (numero1 + numero2)
-    console.log(resultado)
+
+
+ 
+
+
+
+
+function individado(receita, gastos){
+    if(receita > gastos) {
+        return 'RED'
+    } else {
+        return 'BLUE'
+    }
 }
 
 
-soma(1,1)
+const maria = individado(5000,550)
+const joao = individado(1000,2000)
 
-function Nome(nome) {
-    console.log(nome)
-}
-
-Nome("andre")
+console.log(maria)
+console.log(joao)
