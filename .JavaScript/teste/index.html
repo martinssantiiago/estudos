@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversor</title>
+</head>
+<body>
+     <h1>Cadastro</h1>
+     <input type="text"  placeholder="Digite Seu Nome">
+     <button onclick="nome()">converter</button>
+</body>
+<script>
+
+    const nomedapessoa = document.querySelector("input") 
+
+    function nome() {
+        const falaronome = nomedapessoa.value
+        alert(`Seja Bem-Vindo ${falaronome} !`)
+    }
+    
+</script>
+</html>

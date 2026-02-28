@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      body {
+        background: rgb(105, 105, 173);
+        color: white;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+      }
+
+      .conteiner {
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.185);
+        backdrop-filter: blur(4px);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
+        width: 500px;
+        margin: auto;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .procura {
+        color: red;
+        margin-bottom: -40px;
+      }
+
+      p {
+        text-align: justify;
+        margin: 20px;
+      }
+
+      img {
+        width: 300px;
+        border-radius: 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 1%;
+        margin-top: 10%;
+      }
+
+      .questionario {
+        text-align: center;
+      }
+
+      .perguntas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+      }
+
+      input {
+        padding: 10px;
+        outline: none;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 10px;
+      }
+
+      input::placeholder {
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <h1>Hello, word !</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
+        autem, ex dolore reiciendis dolorum quo itaque. Asperiores excepturi
+        corporis beatae minus veniam ea, quos velit ipsa similique atque
+        reiciendis laborum.
+      </p>
+      <h1 class="procura">PROCURA-SE</h1>
+      <img src="./perfil.jpeg" alt="" />
+
+       
+           <h1>responda esse questionario</h1>
+           
+       <div class="perguntas" placeholder="Coloque sua Resposta">
+         <p>Voce viu esse homem?</p>
+           <input type="text" placeholder="Coloque sua Resposta">
+          <p>qual sua idade?</p>
+           <input type="text" placeholder="Coloque sua Resposta">
+           <p>mora perto de qual estabelecimento?</p>
+           <input type="text" placeholder="Coloque sua Resposta">
+           <p>esta por dentro das noticias do industrial?</p>
+           <input type="text" placeholder="Coloque sua Resposta">
+           </div>
+       </div>
+
+    </div>
+
+    <!--
+     (alert)
+     (confirm)
+     (prompt) 
+    -->
+
+    <script>
+      //alert('hello, my G')vai mandar um ola
+      //confirm('you wanna to continue?')questionario para saber se quer continuar
+
+     // let name = prompt("say your name");
+     // let age = prompt("say your age");
+     // let married = prompt("say are you marrried");
+
+      alert(`name: ${name} age: ${age} married: ${married}.`);
+    </script>
+  </body>
+</html>
