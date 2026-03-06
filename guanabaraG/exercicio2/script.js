@@ -1,0 +1,1 @@
+let numero = Number(document.get)
