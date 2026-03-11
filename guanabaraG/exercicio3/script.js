@@ -1,6 +1,6 @@
-let c = 1
 
-while (c <= 10) {
-    console.log(c)
-    c++
-} 
+function num(n1, n2) {
+  return n1 + n2
+}
+
+console.log(num(2, 2))
