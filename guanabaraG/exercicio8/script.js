@@ -14,11 +14,11 @@ function calcular() {
   if(imc < 18.5) {
     classificacao = `abaixo do peso`
   } else if (imc < 25) {
-    classificacao = `com peso normal`
+    classificacao = ` com peso normal`
   } else if (imc < 30) {
-    classificacao = `com sobre peso`
+    classificacao = ` com sobre peso`
   } else {
-    classificacao = `com obesidade`
+    classificacao = ` com obesidade`
   }
 
   res.innerHTML = `${nm}, seu IMC é ${imc.toFixed(2)}, e voce esta${classificacao}`;
