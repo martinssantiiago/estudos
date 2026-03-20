@@ -16,7 +16,7 @@ function mostrar() {
 
   valores.forEach((item) => {
     novali = novali + `
-     <li class="task">
+     <li class = "task">
      <img src="img/checked.png" />
      <p>${item}</p>
      <img src="img/trash.png"/>
