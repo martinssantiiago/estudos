@@ -1,26 +1,33 @@
 let input = document.querySelector(`#nome`);
-let resp = document.querySelector(`.resp`);
+let res = document.querySelector(`.resp`);
 
-let nomes = [];
+let numeros = [];
 
 function ver() {
-  if (input.value === ``) {
-    alert(` [ERRO] Coloque seu nome abaixo !`);
-    return;
-  }
 
-  let nm = input.value
-  
-  nomes.push(nm)
- 
-  resp.innerHTML = nomes.join(`<br>`)
+  let valor = Number(input.value)
 
-  input.focus()
+  numeros.push(valor)
+
+  let maior = numeros[0]
+  let menor = numeros[0]
   
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] > maior) {
+      maior = numeros[i]
+    } 
+    
+    if (numeros[i] < menor) {
+      menor = numeros[i]
+    }
+  } 
+
+  
+  res.innerHTML +=`<br><br>${numeros.join(`<br>`)} 
+  <br><br>Total: ${numeros.length}
+  <br> Maior: ${maior} 
+  <br> Menor: ${menor}`;
+   
+
+  input.focus();
 }
-
-input.addEventListener(`keydown`, function(event) {
-  if(event.key === `Enter`) {
-      ver()
-  }
-})
